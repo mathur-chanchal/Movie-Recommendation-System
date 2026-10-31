@@ -10,10 +10,10 @@ a group-fairness audit, and a Streamlit dashboard (`app_ui.py`) and a Flask REST
   and corrupted metadata (every title appears with 6 genres, 4 languages and 15 release years). 27 user–film pairs were duplicated.
 * **The extra 4,500 rows are synthetic.** MovieLens-100K could not be downloaded in the build environment, so
   `01_generate_data.py` simulates users and 62 films (real titles; metadata compiled from general knowledge — **spot-check it**).
-  Ratings come from a documented latent-factor model (see `data/generation_config.json`).
+  Ratings come from a documented latent-factor model (see `data/raw/generation_config.json`).
   **Therefore every accuracy number below describes how well the models recover *my generator*, not real viewer behaviour.**
   Disclose this in your report. To use real data, place MovieLens in the same schema
-  (`user_id, movie_id, movie_title, genre, language, release_year, rating, timestamp`) as `data/dataset_clean.csv` and re-run steps 3–4.
+  (`user_id, movie_id, movie_title, genre, language, release_year, rating, timestamp`) as `data/processed/dataset.csv` and re-run steps 3–4.
 * The 500 original rows are kept (10 % of the data) but their ratings are not tied to the repaired metadata.
 
 ## Run it
@@ -25,8 +25,8 @@ python3 app.py              # REST API + minimal page → http://127.0.0.1:5000
 ```
 | Step | File | Output |
 |---|---|---|
-| 1 | `01_generate_data.py` | `data/dataset_extended.csv` (5,000 rows, same 7 columns, sorted by timestamp), `anomaly_labels.csv` (130 injected faults = 2.6 %) |
-| 2 | `02_preprocess.py` | `data/dataset_clean.csv` (4,843 rows), `results/cleaning_report.json` |
+| 1 | `01_generate_data.py` | `data/raw/dataset_extended.csv` (5,000 rows, same 7 columns, sorted by timestamp), `anomaly_labels.csv` (130 injected faults = 2.6 %) |
+| 2 | `02_preprocess.py` | `data/processed/dataset.csv` (4,843 rows), `results/cleaning_report.json` |
 | 3 | `03_eda.py` | `figures/01–04`, `results/eda_summary.json` |
 | 4 | `04_evaluate.py` | `results/*.csv|json`, `figures/05–07` |
 | – | `recsys/` (`models.py`, `metrics.py`, `engine.py`, `catalog.py`), `app_ui.py` (Streamlit), `app.py` (Flask API), `tests/` (21 tests) | |
@@ -108,7 +108,7 @@ Synthetic data (above) · 62 films is a tiny catalogue · random (not temporal) 
 |---|---|
 | Working prototype | ✅ `app_ui.py` (dashboard) + `app.py` (API) + `recsys/` |
 | EDA with 3+ visualisations | ✅ `figures/01–04` (+ 05–07 for results) |
-| Cleaned `dataset.csv` | ✅ `data/dataset_clean.csv` |
+| Cleaned `dataset.csv` | ✅ `data/processed/dataset.csv` |
 | `data_dictionary.csv` | ✅ filled |
 | Project report (≥ 8 pages) | ❌ not written |
 | Project synopsis | ❌ template not filled |
