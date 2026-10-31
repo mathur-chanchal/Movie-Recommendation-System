@@ -1,0 +1,32 @@
+{
+  "supplied_rows": 500,
+  "supplied_users": 309,
+  "supplied_films": 8,
+  "supplied_ratings_per_user_mean": 1.62,
+  "supplied_duplicate_user_film_pairs": 27,
+  "supplied_distinct_genres_per_title": 6,
+  "supplied_distinct_years_per_title": 15,
+  "clean_rows": 4843,
+  "clean_users": 500,
+  "clean_films": 62,
+  "sparsity_pct": 84.38,
+  "rating_mean": 3.694,
+  "rating_sd": 0.859,
+  "share_ratings_ge_4": 0.49,
+  "top10_films_share_of_ratings": 0.325,
+  "users_with_le3_ratings": 85,
+  "language_share_of_ratings": {
+    "Hindi": 0.404,
+    "Telugu": 0.186,
+    "Tamil": 0.179,
+    "Malayalam": 0.119,
+    "Kannada": 0.113
+  },
+  "language_share_of_catalogue": {
+    "Hindi": 0.306,
+    "Tamil": 0.21,
+    "Telugu": 0.194,
+    "Malayalam": 0.161,
+    "Kannada": 0.129
+  }
+}

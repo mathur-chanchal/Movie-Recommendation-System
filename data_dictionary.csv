@@ -1,0 +1,9 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description
+user_id,int64,371,103,205,No,"Anonymous integer ID of the person who gave the rating (1-500 after cleaning). No name, contact or demographic attribute is stored, so the data contains no PII."
+movie_id,int64,20,30,7,No,"Integer key of the film in data/movie_catalog.csv (1-62). ADDED during cleaning - not present in the supplied dataset.csv, which only had movie_title."
+movie_title,string,Master,Koi... Mil Gaya,Pink,No,"English title of the film. One title maps to exactly one movie_id, genre, language and release_year (the supplied file had up to 6 genres / 4 languages / 15 years per title; these were repaired from the catalogue)."
+genre,category,Action,Sci-Fi,Drama,No,"Primary genre of the film: Action, Comedy, Drama, Romance, Sci-Fi or Thriller (one genre per film). Taken from the canonical catalogue."
+language,category,Tamil,Hindi,Hindi,No,"Original-release language of the film: Hindi, Tamil, Telugu, Kannada or Malayalam. Used for diversity / regional-exposure metrics, NOT as a model input (models are pure collaborative filtering)."
+release_year,int64,2021,2003,2016,No,Calendar year the film was first released (2003-2024).
+rating,float64,4.0,3.5,3.5,No,Rating given by the user on a 1.0-5.0 scale in 0.5 steps (5.0 = best). Ratings >= 4.0 count as 'relevant' in ranking evaluation. Rows outside 1-5 were removed during cleaning.
+timestamp,datetime (YYYY-MM-DD HH:MM:SS),2025-09-30 22:00:17,2024-08-28 14:26:39,2024-07-18 00:00:00,No,"When the rating was made; range 2024-01-01 to 2025-12-01, sorted ascending. Rows originating from the supplied dataset.csv only had a date, so their time is 00:00:00."

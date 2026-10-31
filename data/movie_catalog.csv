@@ -1,0 +1,63 @@
+movie_id,movie_title,genre,language,release_year,release_date,fame_rank
+1,KGF,Action,Kannada,2018,2018-01-01,1
+2,3 Idiots,Comedy,Hindi,2009,2009-01-01,2
+3,Baahubali,Action,Telugu,2015,2015-01-01,3
+4,RRR,Action,Telugu,2022,2022-01-01,4
+5,Dangal,Drama,Hindi,2016,2016-01-01,5
+6,Drishyam,Thriller,Malayalam,2013,2013-01-01,6
+7,Pink,Drama,Hindi,2016,2016-01-01,7
+8,Andhadhun,Thriller,Hindi,2018,2018-01-01,8
+9,Pushpa: The Rise,Action,Telugu,2021,2021-01-01,9
+10,Kantara,Drama,Kannada,2022,2022-01-01,10
+11,Vikram,Action,Tamil,2022,2022-01-01,11
+12,Enthiran,Sci-Fi,Tamil,2010,2010-01-01,12
+13,PK,Comedy,Hindi,2014,2014-01-01,13
+14,Bajrangi Bhaijaan,Drama,Hindi,2015,2015-01-01,14
+15,Kaithi,Action,Tamil,2019,2019-01-01,15
+16,Premam,Romance,Malayalam,2015,2015-01-01,16
+17,Lucifer,Action,Malayalam,2019,2019-01-01,17
+18,Uri: The Surgical Strike,Action,Hindi,2019,2019-01-01,18
+19,War,Action,Hindi,2019,2019-01-01,19
+20,Master,Action,Tamil,2021,2021-01-01,20
+21,Kahaani,Thriller,Hindi,2012,2012-01-01,21
+22,Queen,Comedy,Hindi,2014,2014-01-01,22
+23,Stree,Comedy,Hindi,2018,2018-01-01,23
+24,Gully Boy,Drama,Hindi,2019,2019-01-01,24
+25,Barfi!,Romance,Hindi,2012,2012-01-01,25
+26,Yeh Jawaani Hai Deewani,Romance,Hindi,2013,2013-01-01,26
+27,Zindagi Na Milegi Dobara,Drama,Hindi,2011,2011-01-01,27
+28,Badla,Thriller,Hindi,2019,2019-01-01,28
+29,Tumbbad,Thriller,Hindi,2018,2018-01-01,29
+30,Koi... Mil Gaya,Sci-Fi,Hindi,2003,2003-01-01,30
+31,Ra.One,Sci-Fi,Hindi,2011,2011-01-01,31
+32,Super Deluxe,Drama,Tamil,2019,2019-01-01,32
+33,96,Romance,Tamil,2018,2018-01-01,33
+34,Asuran,Drama,Tamil,2019,2019-01-01,34
+35,Ratsasan,Thriller,Tamil,2018,2018-01-01,35
+36,Jai Bhim,Drama,Tamil,2021,2021-01-01,36
+37,Vikram Vedha,Thriller,Tamil,2017,2017-01-01,37
+38,Soorarai Pottru,Drama,Tamil,2020,2020-01-01,38
+39,Vinnaithaandi Varuvaayaa,Romance,Tamil,2010,2010-01-01,39
+40,Maanaadu,Sci-Fi,Tamil,2021,2021-01-01,40
+41,Arjun Reddy,Romance,Telugu,2017,2017-01-01,41
+42,Magadheera,Action,Telugu,2009,2009-01-01,42
+43,Ala Vaikunthapurramuloo,Comedy,Telugu,2020,2020-01-01,43
+44,Mahanati,Drama,Telugu,2018,2018-01-01,44
+45,Jersey,Drama,Telugu,2019,2019-01-01,45
+46,Sita Ramam,Romance,Telugu,2022,2022-01-01,46
+47,Goodachari,Thriller,Telugu,2018,2018-01-01,47
+48,Pelli Choopulu,Comedy,Telugu,2016,2016-01-01,48
+49,Kalki 2898 AD,Sci-Fi,Telugu,2024,2024-06-27,49
+50,Lucia,Thriller,Kannada,2013,2013-01-01,50
+51,U Turn,Thriller,Kannada,2016,2016-01-01,51
+52,Kirik Party,Comedy,Kannada,2016,2016-01-01,52
+53,Charlie 777,Drama,Kannada,2022,2022-01-01,53
+54,Sapta Sagaradaache Ello,Romance,Kannada,2023,2023-01-01,54
+55,Ulidavaru Kandanthe,Drama,Kannada,2014,2014-01-01,55
+56,Bangalore Days,Comedy,Malayalam,2014,2014-01-01,56
+57,Kumbalangi Nights,Drama,Malayalam,2019,2019-01-01,57
+58,Manjummel Boys,Thriller,Malayalam,2024,2024-02-22,58
+59,Android Kunjappan Version 5.25,Sci-Fi,Malayalam,2019,2019-01-01,59
+60,Angamaly Diaries,Action,Malayalam,2017,2017-01-01,60
+61,Maheshinte Prathikaaram,Comedy,Malayalam,2016,2016-01-01,61
+62,Jallikattu,Thriller,Malayalam,2019,2019-01-01,62

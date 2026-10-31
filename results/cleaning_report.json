@@ -1,0 +1,73 @@
+{
+  "rows_in": 5000,
+  "rows_out": 4843,
+  "rows_removed": 157,
+  "removed_by_rule": {
+    "unparseable_timestamp": 0,
+    "rating_out_of_range": 20,
+    "future_timestamp": 20,
+    "unknown_title": 0,
+    "rated_before_release": 10,
+    "exact_duplicate": 20,
+    "rating_bomb_bot": 60,
+    "repeat_rating_kept_latest": 27
+  },
+  "metadata_values_corrected": {
+    "genre": 416,
+    "language": 380,
+    "release_year": 477
+  },
+  "rows_with_any_metadata_fix": 498,
+  "bot_users_flagged": [
+    501,
+    502,
+    503,
+    504
+  ],
+  "detector_vs_injected_labels": {
+    "injected": 130,
+    "caught": 130,
+    "recall": 1.0,
+    "removed_but_not_injected": 27,
+    "removed_but_not_injected_by_rule": {
+      "repeat_rating_kept_latest": 27
+    },
+    "note": "All 130 injected faults were caught. 100% recall is expected: the faults are simple and rule-shaped by construction, so this says little about real-world robustness. The 27 'not injected' removals are genuine repeat-ratings already present in the supplied dataset.csv."
+  },
+  "per_anomaly_type": {
+    "exact_duplicate": {
+      "injected": 20,
+      "removed": 20,
+      "recall": 1.0
+    },
+    "future_timestamp": {
+      "injected": 20,
+      "removed": 20,
+      "recall": 1.0
+    },
+    "out_of_range_rating": {
+      "injected": 20,
+      "removed": 20,
+      "recall": 1.0
+    },
+    "rated_before_release": {
+      "injected": 10,
+      "removed": 10,
+      "recall": 1.0
+    },
+    "rating_bomb_bot": {
+      "injected": 60,
+      "removed": 60,
+      "recall": 1.0
+    }
+  },
+  "final": {
+    "users": 500,
+    "movies": 62,
+    "ratings": 4843,
+    "density_pct": 15.62,
+    "mean_rating": 3.694,
+    "ratings_per_user_median": 7.0,
+    "ratings_per_movie_min": 35
+  }
+}

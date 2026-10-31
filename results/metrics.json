@@ -1,0 +1,520 @@
+{
+  "split": {
+    "train": 3874,
+    "test": 969,
+    "eval_users_for_ranking": 276,
+    "relevance_threshold": 4.0
+  },
+  "best_params": {
+    "BiasBaseline": {
+      "reg_i": 5,
+      "reg_u": 5
+    },
+    "UserKNN": {
+      "k": 40,
+      "shrink": 15,
+      "damping": 2.0
+    },
+    "ItemKNN": {
+      "k": 20,
+      "shrink": 5,
+      "damping": 2.0
+    },
+    "SVD": {
+      "n_factors": 20,
+      "reg": 0.1,
+      "reg_bias": 0.05,
+      "n_epochs": 30
+    },
+    "ItemKNN+Pop": {
+      "k": 20,
+      "shrink": 5,
+      "damping": 2.0,
+      "beta": 2.0
+    }
+  },
+  "cv_ndcg10": {
+    "UserKNN": 0.1351,
+    "ItemKNN": 0.144,
+    "SVD": 0.1261,
+    "ItemKNN+Pop(b=0.25)": 0.1774,
+    "ItemKNN+Pop(b=0.5)": 0.2052,
+    "ItemKNN+Pop(b=1.0)": 0.2432,
+    "ItemKNN+Pop(b=2.0)": 0.2493,
+    "ItemKNN+Pop(b=4.0)": 0.2455
+  },
+  "global_mean_cv_rmse": 0.8526,
+  "best_rating_model": "ItemKNN",
+  "best_ranking_model": "ItemKNN+Pop",
+  "test_results": {
+    "GlobalMean": {
+      "rmse": 0.8823,
+      "rmse_ci": [
+        0.8466,
+        0.9118
+      ],
+      "mae": 0.7349
+    },
+    "Popularity": {
+      "rmse": 0.832,
+      "mae": 0.6813,
+      "precision@5": 0.1029,
+      "precision@5_ci": [
+        0.087,
+        0.1181
+      ],
+      "recall@5": 0.2945,
+      "recall@5_ci": [
+        0.2489,
+        0.3381
+      ],
+      "hit_rate@5": 0.4275,
+      "hit_rate@5_ci": [
+        0.3696,
+        0.4783
+      ],
+      "ndcg@5": 0.2046,
+      "ndcg@5_ci": [
+        0.1733,
+        0.2351
+      ],
+      "precision@10": 0.0797,
+      "precision@10_ci": [
+        0.0681,
+        0.0911
+      ],
+      "recall@10": 0.4347,
+      "recall@10_ci": [
+        0.3851,
+        0.4845
+      ],
+      "hit_rate@10": 0.5761,
+      "hit_rate@10_ci": [
+        0.5181,
+        0.6304
+      ],
+      "ndcg@10": 0.2567,
+      "ndcg@10_ci": [
+        0.2249,
+        0.2881
+      ],
+      "diversity@10": {
+        "coverage": 0.5806,
+        "gini": 0.7807,
+        "ild_genre": 0.8253,
+        "ild_language": 0.6621,
+        "entropy_genre": 2.2318,
+        "entropy_language": 1.7984,
+        "novelty": 2.2495,
+        "avg_popularity": 0.2208,
+        "regional_share": 0.4248
+      }
+    },
+    "BiasBaseline": {
+      "rmse": 0.8101,
+      "rmse_ci": [
+        0.7731,
+        0.841
+      ],
+      "mae": 0.6538,
+      "precision@5": 0.0601,
+      "precision@5_ci": [
+        0.0457,
+        0.0757
+      ],
+      "recall@5": 0.131,
+      "recall@5_ci": [
+        0.1,
+        0.1629
+      ],
+      "hit_rate@5": 0.2355,
+      "hit_rate@5_ci": [
+        0.1901,
+        0.2845
+      ],
+      "ndcg@5": 0.1115,
+      "ndcg@5_ci": [
+        0.0865,
+        0.1375
+      ],
+      "precision@10": 0.0525,
+      "precision@10_ci": [
+        0.0417,
+        0.0638
+      ],
+      "recall@10": 0.2381,
+      "recall@10_ci": [
+        0.1969,
+        0.2799
+      ],
+      "hit_rate@10": 0.3551,
+      "hit_rate@10_ci": [
+        0.3007,
+        0.4113
+      ],
+      "ndcg@10": 0.1501,
+      "ndcg@10_ci": [
+        0.1226,
+        0.1777
+      ],
+      "diversity@10": {
+        "coverage": 0.6129,
+        "gini": 0.8124,
+        "ild_genre": 0.8315,
+        "ild_language": 0.6914,
+        "entropy_genre": 2.3337,
+        "entropy_language": 1.5642,
+        "novelty": 3.1472,
+        "avg_popularity": 0.1158,
+        "regional_share": 0.5274
+      }
+    },
+    "UserKNN": {
+      "rmse": 0.8013,
+      "rmse_ci": [
+        0.7661,
+        0.8317
+      ],
+      "mae": 0.6501,
+      "precision@5": 0.0659,
+      "precision@5_ci": [
+        0.0514,
+        0.0812
+      ],
+      "recall@5": 0.1502,
+      "recall@5_ci": [
+        0.1153,
+        0.1871
+      ],
+      "hit_rate@5": 0.2536,
+      "hit_rate@5_ci": [
+        0.2029,
+        0.2971
+      ],
+      "ndcg@5": 0.1233,
+      "ndcg@5_ci": [
+        0.0951,
+        0.1515
+      ],
+      "precision@10": 0.0572,
+      "precision@10_ci": [
+        0.0457,
+        0.0687
+      ],
+      "recall@10": 0.2673,
+      "recall@10_ci": [
+        0.2204,
+        0.3091
+      ],
+      "hit_rate@10": 0.3841,
+      "hit_rate@10_ci": [
+        0.3297,
+        0.4367
+      ],
+      "ndcg@10": 0.1657,
+      "ndcg@10_ci": [
+        0.1376,
+        0.1924
+      ],
+      "diversity@10": {
+        "coverage": 0.6613,
+        "gini": 0.7694,
+        "ild_genre": 0.8401,
+        "ild_language": 0.6574,
+        "entropy_genre": 2.4238,
+        "entropy_language": 1.5966,
+        "novelty": 3.096,
+        "avg_popularity": 0.1229,
+        "regional_share": 0.4856
+      }
+    },
+    "ItemKNN": {
+      "rmse": 0.799,
+      "rmse_ci": [
+        0.7621,
+        0.8288
+      ],
+      "mae": 0.6479,
+      "precision@5": 0.0652,
+      "precision@5_ci": [
+        0.0507,
+        0.0819
+      ],
+      "recall@5": 0.1454,
+      "recall@5_ci": [
+        0.1114,
+        0.1755
+      ],
+      "hit_rate@5": 0.2428,
+      "hit_rate@5_ci": [
+        0.1974,
+        0.2862
+      ],
+      "ndcg@5": 0.1199,
+      "ndcg@5_ci": [
+        0.0922,
+        0.1475
+      ],
+      "precision@10": 0.0623,
+      "precision@10_ci": [
+        0.0504,
+        0.0728
+      ],
+      "recall@10": 0.3007,
+      "recall@10_ci": [
+        0.2587,
+        0.3411
+      ],
+      "hit_rate@10": 0.4348,
+      "hit_rate@10_ci": [
+        0.3804,
+        0.4891
+      ],
+      "ndcg@10": 0.1749,
+      "ndcg@10_ci": [
+        0.1466,
+        0.2
+      ],
+      "diversity@10": {
+        "coverage": 0.7097,
+        "gini": 0.7575,
+        "ild_genre": 0.8432,
+        "ild_language": 0.674,
+        "entropy_genre": 2.4353,
+        "entropy_language": 1.6959,
+        "novelty": 3.0842,
+        "avg_popularity": 0.1241,
+        "regional_share": 0.497
+      }
+    },
+    "SVD": {
+      "rmse": 0.8153,
+      "rmse_ci": [
+        0.7785,
+        0.8471
+      ],
+      "mae": 0.6527,
+      "precision@5": 0.0623,
+      "precision@5_ci": [
+        0.0474,
+        0.0775
+      ],
+      "recall@5": 0.1393,
+      "recall@5_ci": [
+        0.1029,
+        0.1737
+      ],
+      "hit_rate@5": 0.2464,
+      "hit_rate@5_ci": [
+        0.1974,
+        0.2935
+      ],
+      "ndcg@5": 0.1169,
+      "ndcg@5_ci": [
+        0.0888,
+        0.1449
+      ],
+      "precision@10": 0.054,
+      "precision@10_ci": [
+        0.0428,
+        0.0659
+      ],
+      "recall@10": 0.2482,
+      "recall@10_ci": [
+        0.2044,
+        0.29
+      ],
+      "hit_rate@10": 0.3696,
+      "hit_rate@10_ci": [
+        0.3188,
+        0.4167
+      ],
+      "ndcg@10": 0.1554,
+      "ndcg@10_ci": [
+        0.1249,
+        0.1835
+      ],
+      "diversity@10": {
+        "coverage": 0.6129,
+        "gini": 0.7913,
+        "ild_genre": 0.8434,
+        "ild_language": 0.6706,
+        "entropy_genre": 2.4081,
+        "entropy_language": 1.5748,
+        "novelty": 3.1405,
+        "avg_popularity": 0.1179,
+        "regional_share": 0.5088
+      }
+    },
+    "ItemKNN+Pop": {
+      "rmse": 0.799,
+      "rmse_ci": [
+        0.7621,
+        0.8288
+      ],
+      "mae": 0.6479,
+      "precision@5": 0.1036,
+      "precision@5_ci": [
+        0.088,
+        0.1188
+      ],
+      "recall@5": 0.2882,
+      "recall@5_ci": [
+        0.2486,
+        0.3293
+      ],
+      "hit_rate@5": 0.4312,
+      "hit_rate@5_ci": [
+        0.3732,
+        0.4819
+      ],
+      "ndcg@5": 0.208,
+      "ndcg@5_ci": [
+        0.1773,
+        0.2402
+      ],
+      "precision@10": 0.0913,
+      "precision@10_ci": [
+        0.0804,
+        0.1029
+      ],
+      "recall@10": 0.5044,
+      "recall@10_ci": [
+        0.4511,
+        0.5562
+      ],
+      "hit_rate@10": 0.6449,
+      "hit_rate@10_ci": [
+        0.587,
+        0.6993
+      ],
+      "ndcg@10": 0.2872,
+      "ndcg@10_ci": [
+        0.2563,
+        0.3203
+      ],
+      "diversity@10": {
+        "coverage": 0.629,
+        "gini": 0.768,
+        "ild_genre": 0.7539,
+        "ild_language": 0.6406,
+        "entropy_genre": 2.054,
+        "entropy_language": 1.7581,
+        "novelty": 2.3123,
+        "avg_popularity": 0.2148,
+        "regional_share": 0.4072
+      }
+    },
+    "Random": {
+      "precision@5": 0.0413,
+      "precision@5_ci": [
+        0.0297,
+        0.0529
+      ],
+      "recall@5": 0.0959,
+      "recall@5_ci": [
+        0.0685,
+        0.1232
+      ],
+      "hit_rate@5": 0.1667,
+      "hit_rate@5_ci": [
+        0.1232,
+        0.2065
+      ],
+      "ndcg@5": 0.0727,
+      "ndcg@5_ci": [
+        0.0505,
+        0.0935
+      ],
+      "precision@10": 0.0409,
+      "precision@10_ci": [
+        0.0319,
+        0.0506
+      ],
+      "recall@10": 0.1986,
+      "recall@10_ci": [
+        0.1581,
+        0.2367
+      ],
+      "hit_rate@10": 0.2935,
+      "hit_rate@10_ci": [
+        0.2391,
+        0.3442
+      ],
+      "ndcg@10": 0.1092,
+      "ndcg@10_ci": [
+        0.0849,
+        0.1319
+      ],
+      "diversity@10": {
+        "coverage": 1.0,
+        "gini": 0.0791,
+        "ild_genre": 0.8331,
+        "ild_language": 0.7959,
+        "entropy_genre": 2.5231,
+        "entropy_language": 2.2749,
+        "novelty": 3.2094,
+        "avg_popularity": 0.1188,
+        "regional_share": 0.716
+      }
+    }
+  },
+  "paired_rmse_vs_BiasBaseline": {
+    "UserKNN": [
+      -0.0088,
+      [
+        -0.0166,
+        -0.001
+      ]
+    ],
+    "ItemKNN": [
+      -0.011,
+      [
+        -0.0179,
+        -0.0038
+      ]
+    ],
+    "SVD": [
+      0.0053,
+      [
+        -0.0009,
+        0.0115
+      ]
+    ]
+  },
+  "paired_ndcg10_diff": {
+    "ItemKNN+Pop - Popularity": [
+      0.0305,
+      [
+        0.013,
+        0.0492
+      ]
+    ],
+    "ItemKNN - BiasBaseline": [
+      0.0248,
+      [
+        0.011,
+        0.0403
+      ]
+    ],
+    "ItemKNN - Random": [
+      0.0657,
+      [
+        0.03,
+        0.1025
+      ]
+    ],
+    "SVD - BiasBaseline": [
+      0.0053,
+      [
+        -0.0051,
+        0.0164
+      ]
+    ]
+  },
+  "surprise_crosscheck_rmse": {
+    "Surprise BaselineOnly": 0.812,
+    "Surprise SVD (same params)": 0.8109
+  },
+  "runtime_sec": 83
+}

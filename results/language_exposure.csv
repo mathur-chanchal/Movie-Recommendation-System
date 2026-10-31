@@ -1,0 +1,6 @@
+,train_ratings_share,recs_Popularity,recs_ItemKNN,recs_ItemKNN+Pop,recs_ItemKNN+Pop_MMR_lam1.0,recs_ItemKNN+Pop_MMR_lam0.6,recs_ItemKNN+Pop_MMR_lam0.4
+Hindi,0.4,0.575,0.503,0.593,0.593,0.516,0.44
+Telugu,0.181,0.152,0.258,0.152,0.152,0.105,0.162
+Tamil,0.181,0.129,0.196,0.113,0.113,0.201,0.198
+Malayalam,0.121,0.077,0.028,0.077,0.077,0.098,0.1
+Kannada,0.116,0.066,0.014,0.066,0.066,0.08,0.1

@@ -1,0 +1,9 @@
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+flask>=3.0
+streamlit>=1.50
+pytest>=8.0
+# optional: used only for the cross-check in 04_evaluate.py (the pipeline runs without it)
+scikit-surprise>=1.1.4

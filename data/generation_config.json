@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "n_users": 500,
+  "n_total": 5000,
+  "n_original": 500,
+  "n_synthetic": 4500,
+  "n_injected_faults": 130,
+  "pct_faults": 2.6,
+  "latent_dims": 4,
+  "rating_formula": "3.33+b_u+b_i+0.35*genre_pref+0.30*lang_pref+0.8*p_u.q_i+N(0,0.5), rounded to 0.5, clipped [1,5]",
+  "popularity": "fame_rank^-0.55 x exp(1.2*lang_pref + 0.8*genre_pref), sampled w/o replacement",
+  "window": [
+    "2024-01-01 00:00:00",
+    "2025-12-01 23:59:59"
+  ]
+}

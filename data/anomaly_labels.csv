@@ -1,0 +1,131 @@
+row_number,user_id,movie_title,anomaly_type
+26,186,Manjummel Boys,rated_before_release
+37,239,Kalki 2898 AD,rated_before_release
+195,480,Pushpa: The Rise,exact_duplicate
+223,499,Manjummel Boys,rated_before_release
+241,19,Manjummel Boys,rated_before_release
+249,169,Manjummel Boys,rated_before_release
+262,279,KGF,exact_duplicate
+295,484,Kalki 2898 AD,rated_before_release
+346,34,Manjummel Boys,rated_before_release
+383,64,Maheshinte Prathikaaram,exact_duplicate
+385,97,Kalki 2898 AD,rated_before_release
+448,365,Kalki 2898 AD,rated_before_release
+489,264,Uri: The Surgical Strike,exact_duplicate
+727,166,Kalki 2898 AD,rated_before_release
+760,378,Ulidavaru Kandanthe,out_of_range_rating
+815,79,Vinnaithaandi Varuvaayaa,out_of_range_rating
+986,87,Pink,out_of_range_rating
+1051,503,Uri: The Surgical Strike,rating_bomb_bot
+1052,503,Vinnaithaandi Varuvaayaa,rating_bomb_bot
+1053,503,Dangal,rating_bomb_bot
+1054,503,Jersey,rating_bomb_bot
+1055,503,Asuran,rating_bomb_bot
+1056,503,Kahaani,rating_bomb_bot
+1057,503,Maanaadu,rating_bomb_bot
+1058,503,Mahanati,rating_bomb_bot
+1059,503,Angamaly Diaries,rating_bomb_bot
+1060,503,Charlie 777,rating_bomb_bot
+1061,503,Kantara,rating_bomb_bot
+1062,503,Vikram,rating_bomb_bot
+1063,503,Jallikattu,rating_bomb_bot
+1064,503,Pink,rating_bomb_bot
+1065,503,Pelli Choopulu,rating_bomb_bot
+1104,82,War,exact_duplicate
+1241,92,Baahubali,exact_duplicate
+1279,135,Lucifer,exact_duplicate
+1405,45,Jai Bhim,out_of_range_rating
+1424,11,Pushpa: The Rise,exact_duplicate
+1597,166,Tumbbad,out_of_range_rating
+1999,361,Bajrangi Bhaijaan,out_of_range_rating
+2048,409,War,out_of_range_rating
+2259,502,War,rating_bomb_bot
+2260,502,Android Kunjappan Version 5.25,rating_bomb_bot
+2261,502,Vikram Vedha,rating_bomb_bot
+2262,502,Kirik Party,rating_bomb_bot
+2263,502,Lucifer,rating_bomb_bot
+2264,502,RRR,rating_bomb_bot
+2265,502,Gully Boy,rating_bomb_bot
+2266,502,Arjun Reddy,rating_bomb_bot
+2267,502,Charlie 777,rating_bomb_bot
+2268,502,Vinnaithaandi Varuvaayaa,rating_bomb_bot
+2269,502,3 Idiots,rating_bomb_bot
+2270,502,Ala Vaikunthapurramuloo,rating_bomb_bot
+2271,502,Uri: The Surgical Strike,rating_bomb_bot
+2272,502,Kaithi,rating_bomb_bot
+2273,502,Kumbalangi Nights,rating_bomb_bot
+2310,458,Pelli Choopulu,exact_duplicate
+2509,23,U Turn,out_of_range_rating
+2690,63,Ala Vaikunthapurramuloo,exact_duplicate
+3099,139,Kaithi,exact_duplicate
+3176,110,Lucia,out_of_range_rating
+3310,29,Enthiran,exact_duplicate
+3351,175,Andhadhun,out_of_range_rating
+3411,97,3 Idiots,exact_duplicate
+3514,171,Sita Ramam,out_of_range_rating
+3520,344,U Turn,out_of_range_rating
+3643,195,KGF,exact_duplicate
+3786,365,Badla,exact_duplicate
+3814,86,Super Deluxe,exact_duplicate
+3839,334,Barfi!,out_of_range_rating
+3945,501,PK,rating_bomb_bot
+3946,501,Gully Boy,rating_bomb_bot
+3947,501,Ala Vaikunthapurramuloo,rating_bomb_bot
+3948,501,Enthiran,rating_bomb_bot
+3949,501,Stree,rating_bomb_bot
+3950,501,RRR,rating_bomb_bot
+3951,501,Lucifer,rating_bomb_bot
+3952,501,3 Idiots,rating_bomb_bot
+3953,501,Pelli Choopulu,rating_bomb_bot
+3954,501,Koi... Mil Gaya,rating_bomb_bot
+3955,501,Magadheera,rating_bomb_bot
+3956,501,Dangal,rating_bomb_bot
+3957,501,Android Kunjappan Version 5.25,rating_bomb_bot
+3958,501,Kumbalangi Nights,rating_bomb_bot
+3959,501,Yeh Jawaani Hai Deewani,rating_bomb_bot
+4044,6,Android Kunjappan Version 5.25,out_of_range_rating
+4112,159,Andhadhun,out_of_range_rating
+4146,351,Pink,out_of_range_rating
+4169,475,Koi... Mil Gaya,out_of_range_rating
+4205,58,Sapta Sagaradaache Ello,exact_duplicate
+4228,67,Ala Vaikunthapurramuloo,exact_duplicate
+4233,504,Manjummel Boys,rating_bomb_bot
+4234,504,Maheshinte Prathikaaram,rating_bomb_bot
+4235,504,Sapta Sagaradaache Ello,rating_bomb_bot
+4236,504,Arjun Reddy,rating_bomb_bot
+4237,504,Gully Boy,rating_bomb_bot
+4238,504,RRR,rating_bomb_bot
+4239,504,Uri: The Surgical Strike,rating_bomb_bot
+4240,504,Master,rating_bomb_bot
+4241,504,Bajrangi Bhaijaan,rating_bomb_bot
+4242,504,Dangal,rating_bomb_bot
+4243,504,Kantara,rating_bomb_bot
+4244,504,Kalki 2898 AD,rating_bomb_bot
+4245,504,Kahaani,rating_bomb_bot
+4247,504,Lucifer,rating_bomb_bot
+4248,504,Ra.One,rating_bomb_bot
+4622,229,Maheshinte Prathikaaram,out_of_range_rating
+4625,352,Dangal,out_of_range_rating
+4661,454,KGF,exact_duplicate
+4784,479,U Turn,exact_duplicate
+4945,332,Soorarai Pottru,out_of_range_rating
+4981,51,Baahubali,future_timestamp
+4982,98,Jai Bhim,future_timestamp
+4983,229,Andhadhun,future_timestamp
+4984,233,Yeh Jawaani Hai Deewani,future_timestamp
+4985,337,Barfi!,future_timestamp
+4986,162,Jersey,future_timestamp
+4987,430,KGF,future_timestamp
+4988,456,Vinnaithaandi Varuvaayaa,future_timestamp
+4989,331,Android Kunjappan Version 5.25,future_timestamp
+4990,395,Zindagi Na Milegi Dobara,future_timestamp
+4991,306,Manjummel Boys,future_timestamp
+4992,159,Charlie 777,future_timestamp
+4993,279,Pushpa: The Rise,future_timestamp
+4994,183,War,future_timestamp
+4995,363,Goodachari,future_timestamp
+4996,117,RRR,future_timestamp
+4997,398,Ra.One,future_timestamp
+4998,109,Zindagi Na Milegi Dobara,future_timestamp
+4999,134,War,future_timestamp
+5000,24,Sapta Sagaradaache Ello,future_timestamp
